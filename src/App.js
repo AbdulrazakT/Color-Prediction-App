@@ -1,23 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Signin from "./components/Signin";
+import Register from "./components/Register";
+import Home from "./components/Home";
+import { useState } from "react";
 
 function App() {
+  const [route, setRoute] = useState("signin");
+  const [userProfile, setUserProfile] = useState({
+    id: "",
+    name: "",
+    email: "",
+    entries: "",
+    joined: "",
+  });
+
+  const handleRouteChange = (route_change) => {
+    setRoute(route_change);
+  };
+
+  const loadUserProfile = (user) => {
+    setUserProfile({
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      joined: user.joined,
+      entries: user.entries,
+    });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {route === "signin" ? (
+        <Signin
+          changeRoute={handleRouteChange}
+          setUserProfile={loadUserProfile}
+        />
+      ) : route === "register" ? (
+        <Register
+          changeRoute={handleRouteChange}
+          setUserProfile={loadUserProfile}
+        />
+      ) : (
+        <Home
+          changeRoute={handleRouteChange}
+          user_name={userProfile.name}
+          user_id={userProfile.id}
+          user_entries={userProfile.entries}
+        />
+      )}
     </div>
   );
 }
