@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Color-Prediction-App/static/css/main.b9a39bca.chunk.css",
+    "main.js": "/Color-Prediction-App/static/js/main.993dc234.chunk.js",
+    "main.js.map": "/Color-Prediction-App/static/js/main.993dc234.chunk.js.map",
+    "runtime-main.js": "/Color-Prediction-App/static/js/runtime-main.70d54ada.js",
+    "runtime-main.js.map": "/Color-Prediction-App/static/js/runtime-main.70d54ada.js.map",
+    "static/js/2.406e718c.chunk.js": "/Color-Prediction-App/static/js/2.406e718c.chunk.js",
+    "static/js/2.406e718c.chunk.js.map": "/Color-Prediction-App/static/js/2.406e718c.chunk.js.map",
+    "static/js/3.77f7afa2.chunk.js": "/Color-Prediction-App/static/js/3.77f7afa2.chunk.js",
+    "static/js/3.77f7afa2.chunk.js.map": "/Color-Prediction-App/static/js/3.77f7afa2.chunk.js.map",
+    "index.html": "/Color-Prediction-App/index.html",
+    "static/css/main.b9a39bca.chunk.css.map": "/Color-Prediction-App/static/css/main.b9a39bca.chunk.css.map",
+    "static/js/2.406e718c.chunk.js.LICENSE.txt": "/Color-Prediction-App/static/js/2.406e718c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70d54ada.js",
+    "static/js/2.406e718c.chunk.js",
+    "static/css/main.b9a39bca.chunk.css",
+    "static/js/main.993dc234.chunk.js"
+  ]
+}
